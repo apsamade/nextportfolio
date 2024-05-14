@@ -22,11 +22,11 @@ const Nav = () => {
                     href='/'
                 >
                     <Image
-                        src='/logo/logo_brigade_2.png'
-                        alt='Logo Brigade Fantôme'
+                        src='/logo/logo_ab_transparent.png'
+                        alt='Logo Bouderga Abdel-samade Développeur web'
                         width={75}
                         height={75}
-                        className='rounded-[100%] p-2 hover:scale-110 duration-200'
+                        className='p-2 hover:scale-110 duration-200'
                     />
                 </Link>
                 <ul className='flex justify-center items-center'>
@@ -103,11 +103,11 @@ const Nav = () => {
                     onClick={handleNav}
                 >
                     <Image
-                        src='/logo/logo_brigade_2.png'
-                        alt='Logo Brigade Fantôme'
+                        src='/logo/logo_ab_transparent.png'
+                        alt='Logo Bouderga Abdel-samade Développeur web'
                         width={75}
                         height={75}
-                        className='rounded-[100%] p-2 hover:scale-110 duration-200'
+                        className=' p-2 hover:scale-110 duration-200'
                     />
                 </Link>
                 <ul className='flex px-4 my-4 w-full justify-center flex-col items-start'>

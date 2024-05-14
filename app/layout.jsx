@@ -14,16 +14,16 @@ const RootLayout = ({ children }) => {
             <head>
                 <meta name="author" content="Abdel-Samade Bouderga" />
                 <meta name="robots" content="index, follow" />
-                <title>Portfolio Bouderga Abdel-samade</title>
+                <title>Portfolio Bouderga Abdel-samade Développeur web</title>
                 <meta name="description" content="Site officiel de la Brigade Fantôme organisation de tournoi de jeux vidéo compétitif tel que Warzone / League of Legends / NBA et autre." />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="fr_FR" />
-                <link rel="shortcut icon" href="/logo/logo_brigade_2.png" type="image/x-icon" />
+                <link rel="shortcut icon" href="/logo/logo_ab_transparent.png" type="image/x-icon" />
                 <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
-                <meta property="og:title" content="Tournoi de la Brigade Fantôme" />
+                <meta property="og:title" content="Portfolio Bouderga Abdel-samade Développeur web" />
                 <meta property="og:description" content="Site officiel de la Brigade Fantôme organisation de tournoi de jeux vidéo compétitif tel que Warzone / League of Legends / NBA et autre." />
-                <meta property="og:image" content="/logo/logo_brigade_2.png" />
-                <meta property="og:url" content="https://brigadefantome.vercel.app/" />
+                <meta property="og:image" content="/logo/logo_bouderga_dev.png" />
+                <meta property="og:url" content="https://portfolio-bouderga.vercel.app/" />
             </head>
 
             <body className={pathname.startsWith('/dashboard') ? 'bg-fond text-white' : 'bg-fond text-white'}>
