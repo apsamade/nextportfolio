@@ -16,7 +16,7 @@ const Nav = () => {
     }
     return (
         <>
-            <nav className={`link ${pathname === '/' || pathname === '/evenements' || pathname === '/contact' || pathname === '/decouvrir' ? 'lg:flex z-50 w-full hidden justify-between items-center absolute p-3'
+            <nav className={`link ${pathname === '/' || pathname === '/contact' || pathname === '/decouvrir' ? 'lg:flex z-50 w-full hidden justify-between items-center absolute p-3'
                 : 'lg:flex z-50 w-full hidden bg-black justify-between items-center p-3'}`}>
                 <Link
                     href='/'
@@ -48,14 +48,6 @@ const Nav = () => {
                     </li>
                     <li>
                         <Link
-                            href='/evenements'
-                            className='p-4 border-b border-transparent hover:border-white duration-200'
-                        >
-                            Évenements
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
                             href='/contact'
                             className='p-4 border-b border-transparent hover:border-white duration-200'
                         >
@@ -72,7 +64,7 @@ const Nav = () => {
                         {status === 'authenticated' && (
                             <Link
                                 onClick={handleNav}
-                                href='/dashboard'
+                                href='/profile'
                             >
                                 <Image
                                     src={session?.user.image}
@@ -140,15 +132,6 @@ const Nav = () => {
                     <li>
                         <Link
                             onClick={handleNav}
-                            href='/evenements'
-                            className='p-4 py-2 my-2 block border-b border-transparent hover:border-white duration-200'
-                        >
-                            Évenements
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            onClick={handleNav}
                             href='/contact'
                             className='p-4 py-2 my-2 block border-b border-transparent hover:border-white duration-200'
                         >
@@ -162,7 +145,7 @@ const Nav = () => {
                         {session?.user ? (
                             <Link
                                 onClick={handleNav}
-                                href='/dashboard'
+                                href='/profile'
                                 className='rounded-md flex items-end justify-center hover:bg-white hover:text-black duration-200 p-2'
                             >
                                 <Image

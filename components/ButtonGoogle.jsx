@@ -8,14 +8,13 @@ import { useState, useEffect, Suspense } from "react";
 function Search() {
     const searchParams = useSearchParams();
     const err = searchParams.get('error')
-    if (err) setErreur('Une erreur est survenue lors de la connexion')
     console.log(err)
 }
 const ButtonGoogle = ({ type }) => {
     const [erreur, setErreur] = useState("")
 
     const handleConnect = () => {
-        signIn("google", { callbackUrl: '/dashboard', redirect: false })
+        signIn("google", { callbackUrl: '/', redirect: false })
     }
     return (
         <>

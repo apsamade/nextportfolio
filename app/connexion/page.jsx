@@ -34,7 +34,7 @@ const Connexion = () => {
             try {
                 const response = await signIn('credentials', {
                     ...credentials,
-                    callbackUrl: '/dashboard',
+                    callbackUrl: '/',
                     redirect: false,
                 });
                 console.log(response)

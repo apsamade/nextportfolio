@@ -53,9 +53,9 @@ const Inscription = () => {
         const email = e.target.email.value;
         const mdp = e.target.mdp.value;
         const mdpv = e.target.mdpv.value;
-        const pseudo = e.target.pseudo.value;
+        const nom = e.target.nom.value;
 
-        const credentials = { email, mdp, mdpv, pseudo }
+        const credentials = { email, mdp, mdpv, nom }
 
         if (!email || !mdp || !mdpv || selectedImage == null) {
             setError('Veuillez remplir tous les champs.')
@@ -98,7 +98,7 @@ const Inscription = () => {
                 <h2 className='uppercase bg-gradient-to-r pt-5 lg:text-3xl text-2xl pb-8 text-center'>Inscription</h2>
                 <div className='flex flex-wrap items-center justify-center'>
                     <input className='rounded-md p-3 m-2 bg-sky-200 basis-2/5 grow duration-300 outline-transparent focus:outline focus:outline-sky-600' type="email" placeholder='E-mail' name='email' />
-                    <input className='rounded-md p-3 m-2 bg-sky-200 basis-2/5 grow duration-300 outline-transparent focus:outline focus:outline-sky-600' type="text" placeholder='Pseudo' name='pseudo' />
+                    <input className='rounded-md p-3 m-2 bg-sky-200 basis-2/5 grow duration-300 outline-transparent focus:outline focus:outline-sky-600' type="text" placeholder='Nom' name='nom' />
                     <div className='p-2 basis-full flex items-center justify-center flex-wrap'>
                         <Image
                             src="/assets/elements/pdp-1.jpg"

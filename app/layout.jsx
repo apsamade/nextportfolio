@@ -26,11 +26,11 @@ const RootLayout = ({ children }) => {
                 <meta property="og:url" content="https://brigadefantome.vercel.app/" />
             </head>
 
-            <body className={pathname.startsWith('/dashboard') ? 'bg-fond text-white flex p-4' : 'bg-fond text-white'}>
+            <body className={pathname.startsWith('/dashboard') ? 'bg-fond text-white' : 'bg-fond text-white'}>
                 <Provider>
-                    {!pathname.startsWith('/dashboard') && <Nav />}
+                    <Nav />
                     {children}
-                    {!pathname.startsWith('/dashboard') && <Footer />}
+                    <Footer />
                 </Provider>
             </body>
 
