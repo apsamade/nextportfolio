@@ -33,36 +33,10 @@
     animation: fadeIn 0.5s 0s ease forwards;
 }
 
-.btn-decouvrir {
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 50px 50px rgba(0, 0, 0, 0.2);
-}
-
-.grid-teams {
+.projets{
     display: grid;
-    gap: 12px;
-    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
-    margin: 50px auto 20px auto;
-    width: calc(100% - 30px);
-    min-width: 340px;
-    border-radius: 6px;
-    padding: 15px;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
 }
-.grid-tournois {
-    display: grid;
-    gap: 12px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-}
-.grid-team-inscrite {
-    display: grid;
-    gap: 12px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(20px, 1fr));
-}
-
 .move-elem-1{
     animation: animate-background 6s infinite ease;
 }

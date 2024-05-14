@@ -10,7 +10,7 @@ const BackgroundAnime = () => {
                 src="/assets/elements/rondorange.png"
                 width={50}
                 height={50}
-                className="move-elem-1 absolute top-[30%] right-[25%] z-0"
+                className="move-elem-1 hover:top-[32%] hover:right-[27%] duration-1000 absolute top-[30%] right-[25%] z-0"
 
             />
             <Image
@@ -18,7 +18,7 @@ const BackgroundAnime = () => {
                 src="/assets/elements/elem3.png"
                 width={140}
                 height={140}
-                className="move-elem-4 absolute bottom-[25%] left-[10%] z-0"
+                className="move-elem-4 hover:bottom-[27%] hover:left-[12%] duration-1000 absolute bottom-[25%] left-[10%] z-0"
 
             />
             <Image
@@ -26,22 +26,21 @@ const BackgroundAnime = () => {
                 src="/assets/elements/elem2.png"
                 width={120}
                 height={120}
-                className="move-elem-3 absolute bottom-[25%] right-[10%] z-0"
-
+                className="move-elem-3 hover:bottom-[27%] hover:right-[12%] duration-1000 absolute bottom-[25%] right-[10%] z-0"
             />
             <Image
                 alt="Image de abdel-samade le développeur web"
                 src="/assets/elements/elem1.png"
                 width={110}
                 height={110}
-                className="move-elem-2 absolute top-[25%] left-[25%] z-0"
+                className="move-elem-2 hover:top-[27%] hover:left-[27%] duration-1000 absolute top-[25%] left-[25%] z-0"
             />
             <Image
                 alt="Image de abdel-samade le développeur web"
                 src="/assets/elements/elem1.png"
                 width={110}
                 height={110}
-                className="move-elem-2 absolute top-[50%] left-[50%] z-0"
+                className="move-elem-2 hover:top-[52%] hover:left-[52%] duration-1000 absolute top-[50%] left-[50%] z-0"
             />
         </div>
     )
