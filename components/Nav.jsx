@@ -161,7 +161,7 @@ const Nav = () => {
                                     alt='Photo de profile'
                                     width={50}
                                     height={50}
-                                    className='block rounded-[100%] mr-2'
+                                    className='block rounded-[100%]'
                                 />
                                 {session?.user.pseudo}
                             </Link>

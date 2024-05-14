@@ -15,14 +15,14 @@ const RootLayout = ({ children }) => {
                 <meta name="author" content="Abdel-Samade Bouderga" />
                 <meta name="robots" content="index, follow" />
                 <title>Portfolio Bouderga Abdel-samade Développeur web</title>
-                <meta name="description" content="Site officiel de la Brigade Fantôme organisation de tournoi de jeux vidéo compétitif tel que Warzone / League of Legends / NBA et autre." />
+                <meta name="description" content="Je suis Abdel-Samade Bouderga, un développeur web spécialisé en JavaScript, React.js et Next.js. À la recherche d'une alternance, passionné et performant. Découvrez mon portfolio ici." />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="fr_FR" />
                 <link rel="shortcut icon" href="/logo/logo_ab_transparent.png" type="image/x-icon" />
                 <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
                 <meta property="og:title" content="Portfolio Bouderga Abdel-samade Développeur web" />
-                <meta property="og:description" content="Site officiel de la Brigade Fantôme organisation de tournoi de jeux vidéo compétitif tel que Warzone / League of Legends / NBA et autre." />
-                <meta property="og:image" content="/logo/logo_bouderga_dev.png" />
+                <meta property="og:description" content="Je suis Abdel-Samade Bouderga, un développeur web spécialisé en JavaScript, React.js et Next.js. À la recherche d'une alternance, passionné et performant. Découvrez mon portfolio ici." />
+                <meta property="og:image" content="/assets/elements/photo_presentation_2.jpg" />
                 <meta property="og:url" content="https://portfolio-bouderga.vercel.app/" />
             </head>
 

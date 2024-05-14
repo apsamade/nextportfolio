@@ -41,7 +41,7 @@ const Profile = () => {
     }
     return (
         <>
-            <div className="fixed -z-50 top-0 right-0 left-0 bottom-0 bg-profile-bg bg-cover bg-fixed"></div>
+            <div className="fixed -z-50 top-0 right-0 left-0 bottom-0 bg-header-evenement bg-cover bg-fixed"></div>
 
             <section className="min-h-[75vh]">
                 <h1 className="p-8 text-3xl text-center uppercase">Mon Profile</h1>
