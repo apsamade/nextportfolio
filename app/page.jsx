@@ -38,7 +38,7 @@ const Home = () => {
                     <div className="flex items-center justify-center flex-wrap">
                     <Link
                         href="/assets/CV_Bouderga_Abdel-samade_2.pdf"
-                        className="p-4 basis-[350px] grow hover:basis-[400px] mr-2 rounded-md uppercase hover:px-12 hover:bg-orange-600 duration-200 bg-orange-500 mt-4 block"
+                        className="p-4 basis-[350px] grow hover:basis-[400px] lg:mr-2 rounded-md uppercase hover:px-12 hover:bg-orange-600 duration-200 bg-orange-500 mt-4 block"
                         target="_blank"
                     >
                         Mon CV
@@ -87,9 +87,9 @@ const Home = () => {
                 </div>
             </section>
             <section>
-                <h2 className="text-4xl mt-24 m-6"><strong className="bg-gradient-to-r uppercase from-orange-300 to-orange-600 text-transparent bg-clip-text">Mes projets réaliser</strong></h2>
+                <h2 className="text-2xl lg:text-4xl mt-24 m-6"><strong className="bg-gradient-to-r uppercase from-orange-300 to-orange-600 text-transparent bg-clip-text">Mes projets réaliser</strong></h2>
                 {charged ? (
-                    <div className="projets mt-24 mb-24 gap-4 max-w-[1200px] mx-auto">
+                    <div className="projets p-4 lg:mt-24 mb-24 gap-4 max-w-[1200px] mx-auto">
                         {projets?.map(projet => 
                             <Link href={projet.link} key={projet._id} className="relative hover:scale-105 duration-200 min-h-[155px] overflow-hidden rounded-md">
                                 <Image 
