@@ -30,6 +30,14 @@ const Nav = () => {
                     />
                 </Link>
                 <ul className='flex justify-center items-center'>
+                <li>
+                        <Link
+                            href='/'
+                            className='p-4 border-b border-transparent hover:border-white duration-200'
+                        >
+                            Accueil
+                        </Link>
+                    </li>
                     <li>
                         <Link
                             href='/decouvrir'
