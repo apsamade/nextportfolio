@@ -89,7 +89,7 @@ const Home = () => {
             <section>
                 <h2 className="text-2xl lg:text-4xl mt-24 m-6"><strong className="bg-gradient-to-r uppercase from-orange-300 to-orange-600 text-transparent bg-clip-text">Mes projets réaliser</strong></h2>
                 {charged ? (
-                    <div className="projets p-4 lg:mt-24 mb-24 gap-4 max-w-[1200px] mx-auto">
+                    <div className="projets p-4 lg:mt-16 mb-24 gap-4 max-w-[1200px] mx-auto">
                         {projets?.map(projet => 
                             <Link href={projet.link} key={projet._id} className="relative hover:scale-105 duration-200 min-h-[155px] overflow-hidden rounded-md">
                                 <Image 
@@ -105,7 +105,7 @@ const Home = () => {
                     </div>
                 ) : (
                     <div>
-                        <h3>Chargement des projets en cours ...</h3>
+                        <h3 className="text-center p-4 mx-auto">Chargement des projets en cours ...</h3>
                     </div>
                 )}
             </section>
