@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Barre de défilement verticale */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+    background: #655ce081;
+    /* Couleur de fond de la piste de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2415ff;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1567ff;
+    /* Couleur de la poignée de défilement au survol */
+}
+
+/* message & erreur */
+.message {
+    animation: fadeIn 0.5s 0s ease forwards;
+}
+
+.btn-decouvrir {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 50px 50px rgba(0, 0, 0, 0.2);
+}
+
+.grid-teams {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 50px auto 20px auto;
+    width: calc(100% - 30px);
+    min-width: 340px;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+}
+.grid-tournois {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+}
+.grid-team-inscrite {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(20px, 1fr));
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
