@@ -10,13 +10,13 @@ const Home = () => {
     const [charged, setCharged] = useState(false)
     const [projets, setProjets] = useState([])
 
-    useEffect(()=>{
-        const fetchProjet = async() =>{
+    useEffect(() => {
+        const fetchProjet = async () => {
             try {
                 const response = await fetch('/api/projets', {
                     method: 'GET'
                 })
-                if(response.ok){
+                if (response.ok) {
                     const data = await response.json()
                     setProjets(data)
                     setCharged(true)
@@ -36,21 +36,21 @@ const Home = () => {
                     <hr className='max-w-[100px] mt-8 mb-3' />
                     <p className="font-light">Je suis <strong>Abdel-Samade Bouderga</strong>, un <strong>développeur web</strong> recherchant activement une alternance en développement web <strong>JavaScript</strong> avec <strong>React.js</strong>. Fort de mes compétences et de ma spécialisation en <strong>Next.js</strong> depuis plus d'un an, je suis passionné, performant et rapide à apprendre. Si mon profil vous intéresse, n'hésitez pas à <strong>me contacter</strong> pour discuter davantage.</p>
                     <div className="flex items-center justify-center flex-wrap">
-                    <Link
-                        href="/assets/CV_Bouderga_Abdel-samade_2.pdf"
-                        className="p-4 basis-[350px] grow hover:basis-[400px] lg:mr-2 rounded-md uppercase hover:px-12 hover:bg-orange-600 duration-200 bg-orange-500 mt-4 block"
-                        target="_blank"
-                    >
-                        Mon CV
-                    </Link>
-                    <Link
-                        href="/contact"
-                        className="p-4 basis-[350px] grow hover:basis-[400px] rounded-md uppercase hover:px-12 hover:bg-orange-600 duration-200 bg-orange-500 mt-4 block"
-                    >
-                        Me contacter
-                    </Link>
+                        <Link
+                            href="/assets/CV_Bouderga_Abdel-samade_2.pdf"
+                            className="p-4 basis-[350px] grow hover:basis-[400px] lg:mr-2 rounded-md uppercase hover:px-12 hover:bg-orange-600 duration-200 bg-orange-500 mt-4 block"
+                            target="_blank"
+                        >
+                            Mon CV
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="p-4 basis-[350px] grow hover:basis-[400px] rounded-md uppercase hover:px-12 hover:bg-orange-600 duration-200 bg-orange-500 mt-4 block"
+                        >
+                            Me contacter
+                        </Link>
                     </div>
-                    
+
                 </div>
                 <BackgroundAnime />
             </header>
@@ -86,13 +86,53 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <section className="relative py-8">
+                <BackgroundAnime />
+                <h2 className="text-2xl lg:text-4xl mt-24 lg:ml-24 m-6"><strong className="bg-gradient-to-r uppercase from-orange-300 to-orange-600 text-transparent bg-clip-text">Mes compétences</strong></h2>
+                <div className="max-w-[1200px] mx-auto flex items-start justify-center flex-wrap">
+                    <section className="p-4 bg-fond-3 rounded-md shadow-2xl m-3">
+                        <p>Languages</p>
+                        <div className="w-[325px] hover:animate-pulse m-4 min-h-[40px] p-3 rounded-md bg-white overflow-hidden relative">
+                            <h3 className="absolute top-2 left-2 text-white z-20">HTML</h3>
+                            <div className="absolute top-0 left-0 bottom-0 right-[10%] bg-red-500"></div>
+                        </div>
+                        <div className="w-[325px] hover:animate-pulse m-4 min-h-[40px] p-3 rounded-md bg-white overflow-hidden relative">
+                            <h3 className="absolute top-2 left-2 text-white z-20">CSS</h3>
+                            <div className="absolute top-0 left-0 bottom-0 right-[20%] bg-sky-500"></div>
+                        </div>
+                        <div className="w-[325px] hover:animate-pulse m-4 min-h-[40px] p-3 rounded-md bg-white overflow-hidden relative">
+                            <h3 className="absolute top-2 left-2 text-black z-20">JS</h3>
+                            <div className="absolute top-0 left-0 bottom-0 right-[30%] bg-yellow-400"></div>
+                        </div>
+                        <div className="w-[325px] hover:animate-pulse m-4 min-h-[40px] p-3 rounded-md bg-white overflow-hidden relative">
+                            <h3 className="absolute top-2 left-2 text-white z-20">PHP</h3>
+                            <div className="absolute top-0 left-0 bottom-0 right-[60%] bg-blue-600"></div>
+                        </div>
+                    </section>
+                    <section className="p-4 bg-fond-3 rounded-md shadow-2xl m-3">
+                        <p>Frameworks</p>
+                        <div className="w-[325px] hover:animate-pulse m-4 min-h-[40px] p-3 rounded-md bg-white overflow-hidden relative">
+                            <h3 className="absolute top-2 left-2 text-white z-20">ReactJs</h3>
+                            <div className="absolute top-0 left-0 bottom-0 right-[35%] bg-sky-600"></div>
+                        </div>
+                        <div className="w-[325px] hover:animate-pulse m-4 min-h-[40px] p-3 rounded-md bg-white overflow-hidden relative">
+                            <h3 className="absolute top-2 left-2 text-black z-20">NodeJS</h3>
+                            <div className="absolute top-0 left-0 bottom-0 right-[30%] bg-green-500"></div>
+                        </div>
+                        <div className="w-[325px] hover:animate-pulse m-4 min-h-[40px] p-3 rounded-md bg-white overflow-hidden relative">
+                            <h3 className="absolute top-2 left-2 text-white z-20">NextJs</h3>
+                            <div className="absolute top-0 left-0 bottom-0 right-[30%] bg-black"></div>
+                        </div>
+                    </section>
+                </div>
+            </section>
             <section>
-                <h2 className="text-2xl lg:text-4xl mt-24 m-6"><strong className="bg-gradient-to-r uppercase from-orange-300 to-orange-600 text-transparent bg-clip-text">Mes projets réaliser</strong></h2>
+                <h2 className="text-2xl lg:text-4xl mt-24 lg:ml-24 m-6"><strong className="bg-gradient-to-r uppercase from-orange-300 to-orange-600 text-transparent bg-clip-text">Mes projets réaliser</strong></h2>
                 {charged ? (
                     <div className="projets p-4 lg:mt-16 mb-24 gap-4 max-w-[1200px] mx-auto">
-                        {projets?.map(projet => 
-                            <Link href={projet.link} key={projet._id} className="relative hover:scale-105 duration-200 min-h-[155px] overflow-hidden rounded-md">
-                                <Image 
+                        {projets?.map(projet =>
+                            <Link target="_blank" href={projet.link} key={projet._id} className="relative hover:scale-105 duration-200 min-h-[155px] overflow-hidden rounded-md">
+                                <Image
                                     alt={projet.name}
                                     src={projet.image}
                                     width={300}
@@ -109,7 +149,7 @@ const Home = () => {
                     </div>
                 )}
             </section>
-            
+
         </main>
     )
 }
