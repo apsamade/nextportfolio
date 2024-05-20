@@ -40,14 +40,6 @@ const Nav = () => {
                     </li>
                     <li>
                         <Link
-                            href='/decouvrir'
-                            className='p-4 border-b border-transparent hover:border-white duration-200'
-                        >
-                            Découvrir
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
                             href='/blog'
                             className='p-4 border-b border-transparent hover:border-white duration-200'
                         >
@@ -119,15 +111,6 @@ const Nav = () => {
                     />
                 </Link>
                 <ul className='flex px-4 my-4 w-full justify-center flex-col items-start'>
-                    <li>
-                        <Link
-                            onClick={handleNav}
-                            href='/decouvrir'
-                            className='p-4 py-2 my-2 block border-b border-transparent hover:border-white duration-200'
-                        >
-                            Découvrir
-                        </Link>
-                    </li>
                     <li>
                         <Link
                             onClick={handleNav}
