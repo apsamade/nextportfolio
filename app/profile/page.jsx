@@ -54,48 +54,54 @@ const Profile = () => {
                         <li className="py-3">Email : <span className="text-sm sm:text-base sm:font-normal font-light">{session?.user.email}</span></li>
                     </ul>
                 </section>
-                <section className="bg-black my-3 p-5 max-w-3xl mx-auto rounded-md shadow-2xl">
-                    <h2 className="text-xl uppercase text-center py-4">Portfolio</h2>
-                    <ul>
-                        <li className="my-4">
-                            <Link
-                                className="m-1 block hover:bg-orange-600 duration-200 w-fit px-12 hover:px-24 p-3 bg-orange-500 rounded-md shadow-2xl"
-                                href="/admin/portfolio/add-projet"
-                            >
-                                Ajout d'un projet
-                            </Link>
-                        </li>
-                        <li className="my-4">
-                            <Link
-                                className="m-1 block hover:bg-orange-600 duration-200 w-fit px-12 hover:px-24 p-3 bg-orange-500 rounded-md shadow-2xl"
-                                href="/admin/portfolio/projets"
-                            >
-                                Modifier / Supprimer un projet
-                            </Link>
-                        </li>
-                    </ul>
-                </section>
-                <section className="bg-black my-3 p-5 max-w-3xl mx-auto rounded-md shadow-2xl">
-                    <h2 className="text-xl uppercase text-center py-4">Blog</h2>
-                    <ul>
-                        <li className="my-4">
-                            <Link
-                                className="m-1 block hover:bg-orange-600 duration-200 w-fit px-12 hover:px-24 p-3 bg-orange-500 rounded-md shadow-2xl"
-                                href="/admin/blog/add-article"
-                            >
-                                Ajout d'un article
-                            </Link>
-                        </li>
-                        <li className="my-4">
-                            <Link
-                                className="m-1 block hover:bg-orange-600 duration-200 w-fit px-12 hover:px-24 p-3 bg-orange-500 rounded-md shadow-2xl"
-                                href="/admin/blog/articles"
-                            >
-                                Modifier / Supprimer un article
-                            </Link>
-                        </li>
-                    </ul>
-                </section>
+                {session?.user?.admin &&
+                    <>
+                        <section className="bg-black my-3 p-5 max-w-3xl mx-auto rounded-md shadow-2xl">
+                            <h2 className="text-xl uppercase text-center py-4">Portfolio</h2>
+                            <ul>
+                                <li className="my-4">
+                                    <Link
+                                        className="m-1 block hover:bg-orange-600 duration-200 w-fit px-12 hover:px-24 p-3 bg-orange-500 rounded-md shadow-2xl"
+                                        href="/admin/portfolio/add-projet"
+                                    >
+                                        Ajout d'un projet
+                                    </Link>
+                                </li>
+                                <li className="my-4">
+                                    <Link
+                                        className="m-1 block hover:bg-orange-600 duration-200 w-fit px-12 hover:px-24 p-3 bg-orange-500 rounded-md shadow-2xl"
+                                        href="/admin/portfolio/projets"
+                                    >
+                                        Modifier / Supprimer un projet
+                                    </Link>
+                                </li>
+                            </ul>
+                        </section>
+                        <section className="bg-black my-3 p-5 max-w-3xl mx-auto rounded-md shadow-2xl">
+                            <h2 className="text-xl uppercase text-center py-4">Blog</h2>
+                            <ul>
+                                <li className="my-4">
+                                    <Link
+                                        className="m-1 block hover:bg-orange-600 duration-200 w-fit px-12 hover:px-24 p-3 bg-orange-500 rounded-md shadow-2xl"
+                                        href="/admin/blog/add-article"
+                                    >
+                                        Ajout d'un article
+                                    </Link>
+                                </li>
+                                <li className="my-4">
+                                    <Link
+                                        className="m-1 block hover:bg-orange-600 duration-200 w-fit px-12 hover:px-24 p-3 bg-orange-500 rounded-md shadow-2xl"
+                                        href="/admin/blog/articles"
+                                    >
+                                        Modifier / Supprimer un article
+                                    </Link>
+                                </li>
+                            </ul>
+                        </section>
+                    </>
+                }
+
+
                 <button
                     onClick={() => signOut({ redirect: true })}
                     className="text-center min-w-[325px] my-5 block shadow-2xl mx-auto p-4 px-12 hover:px-16 hover:bg-red-700 duration-200 bg-red-500 rounded-lg"
