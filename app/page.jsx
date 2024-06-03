@@ -14,7 +14,9 @@ const Home = () => {
         const fetchProjet = async () => {
             try {
                 const response = await fetch('/api/projets', {
-                    method: 'GET'
+                    method: 'GET',
+                    next: { revalidate: 0 }
+                    
                 })
                 if (response.ok) {
                     const data = await response.json()
