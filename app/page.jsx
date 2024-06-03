@@ -15,6 +15,7 @@ const Home = () => {
             try {
                 const response = await fetch('/api/projets', {
                     method: 'GET',
+                    cache: 'no-store',
                     next: { revalidate: 0 }
                     
                 })
@@ -39,7 +40,7 @@ const Home = () => {
                     <p className="font-light">Je suis <strong>Abdel-Samade Bouderga</strong>, un <strong>développeur web</strong> recherchant activement une alternance en développement web <strong>JavaScript</strong> avec <strong>React.js</strong>. Fort de mes compétences et de ma spécialisation en <strong>Next.js</strong> depuis plus d'un an, je suis passionné, performant et rapide à apprendre. Si mon profil vous intéresse, n'hésitez pas à <strong>me contacter</strong> pour discuter davantage.</p>
                     <div className="flex items-center justify-center flex-wrap">
                         <Link
-                            href="/assets/CV_Bouderga_Abdel-samade_2.pdf"
+                            href="/assets/CV_Bouderga_Abdel-samade_3.pdf"
                             className="p-4 basis-[350px] grow hover:basis-[400px] md:mr-2 rounded-md uppercase hover:px-12 hover:bg-orange-600 duration-200 bg-orange-500 mt-4 block"
                             target="_blank"
                         >
