@@ -15,7 +15,6 @@ const Home = () => {
             try {
                 const response = await fetch('/api/projets', {
                     method: 'GET',
-                    cache: 'no-store',
                     next: { revalidate: 0 }
                     
                 })
