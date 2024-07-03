@@ -15,8 +15,7 @@ const Home = () => {
             try {
                 const response = await fetch('/api/projets', {
                     method: 'GET',
-                    next: { revalidate: 0 }
-                    
+                    next: { revalidate: 1 }
                 })
                 if (response.ok) {
                     const data = await response.json()
