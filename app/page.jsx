@@ -73,7 +73,7 @@ const Home = () => {
                         <hr className="mt-6" />
                         <div>
                             <Link
-                                href="/assets/CV_Bouderga_Abdel-samade_2.pdf"
+                                href="/assets/CV.pdf"
                                 className="p-4 rounded-md uppercase hover:px-12 hover:bg-orange-600 duration-200 bg-orange-500 mt-4 block"
                                 target="_blank"
                             >
