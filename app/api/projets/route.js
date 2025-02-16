@@ -6,6 +6,7 @@ export const GET = async(req) =>{
     try {
         await connectToDB()
         const projets = await Projet.find()
+        if(!projets) return NextResponse.json({error: "aucun projets trouver."}, {status: 400})
         return NextResponse.json(projets, {status: 200})
     } catch (error) {
         console.log(error)
